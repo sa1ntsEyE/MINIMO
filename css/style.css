@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Estonia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Estonia&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+
+    background: url("../img/background.png");
+
+}
+
+._container{
+    max-width: 1062px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/*/////////////////////////////HEADER//////////////////////////////*/
+
+.header__container{
+    display: flex;
+    padding: 68px 0 95px 0 ;
+
+}
+
+.header__title{
+
+}
+
+.header__title_text{
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: "Inconsolata";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+.header__menu{
+    margin: 0 0 0 220px;
+}
+
+
+
+.menu_list{
+    display: inline-flex;
+
+}
+
+.menu__item{
+    text-align: right;
+    margin: 0 107px 0 0 ;
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+
+.header__photo{
+
+}
+.header__photo_img{
+    max-width: 1062px;
+    padding: 0 0 95px 0;
+}
+
+
+
+@media (max-width: 1010px) {
+    .header__title_text{
+        margin: 0 0 0 40px;
+    }
+
+    .header__menu{
+        margin: 0 0 0 120px;
+    }
+
+    .header__title_text{
+        letter-spacing: 5px;
+        font-size: 50px;
+        font-family: "Inconsolata";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 0.8;
+    }
+
+    .menu__item{
+        text-align: right;
+        margin: 0 45px 0 0 ;
+        font-size: 25px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        text-transform: uppercase;
+        line-height: 1.7;
+    }
+    .header__photo_img{
+        max-width: 1062px;
+        padding: 0 0 95px 0;
+    }
+}
+
+
+
+/*///////////////////////PHOTODIARY//////////////////////////*/
+
+.photodiary__content{
+    padding: 0 80px;
+}
+
+
+
+
+.photodiary__title{
+    padding: 0 0 30px 0;
+}
+
+.photodiary__text{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+
+
+.subtitle__title{
+    padding: 0 0 40px 0;
+}
+.subtitle__text{
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+
+}
+
+
+
+.photodiary__main_text{
+    padding: 0 0 50px 0;
+}
+.main_text{
+
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+
+}
+
+.photodiary__leave_a_comment{
+    padding: 0 0 135px 0;
+}
+
+
+
+
+@media (max-width: 1010px) {
+    .photodiary__text{
+        font-size: 28px;
+        font-family: "Ubuntu";
+        color: rgb(180, 173, 158);
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    .subtitle__text{
+        font-size: 60px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.2;
+
+    }
+    .main_text{
+
+        font-size: 21.8px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.5;
+
+    }
+}
+
+/*/////////////////////PHOTOLIFE////////////////////////////////////////*/
+
+.photolife_body_content{
+    padding: 0 80px;
+
+}
+
+
+
+.photo__content{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.photo-block-1 {
+    width: 420px;
+    padding: 0 0 135px 0;
+}
+
+.photo-block-2 {
+    width: 420px;
+}
+
+
+
+
+
+.image_content{
+
+}
+
+.image_content_image{
+    padding: 0 0 30px 0;
+}
+
+.photo-block_title_content{
+    padding: 0 0 30px 0;
+}
+
+.photo-block_title_content_text{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.photo-block_subtitle_content{
+    padding: 0 0 40px 0;
+}
+.photo-block_subtitle_content_text{
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+}
+.photo-block_text_content{
+
+}
+.photo-block_text_content_text{
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+}
+
+@media (max-width: 1010px) {
+    .photo__content{
+        display: block;
+        margin: 0 0 100px 0;
+    }
+
+    .photo-block-1 {
+        margin: 0 auto;
+        text-align: center;
+        width: 800px;
+        padding: 0 0 135px 0;
+    }
+
+    .photo-block-2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 800px;
+    }
+
+    .photo_block_image{
+        width: 560px;
+    }
+
+    .photo-block_title_content_text{
+        font-size: 28px;
+    }
+
+    .photo-block_subtitle_content_text{
+        font-size: 44px;
+    }
+
+    .photo-block_text_content_text{
+        font-size: 21px;
+    }
+
+}
+
+/*///////////////////NEWSLETTER////////////////////////////////////////////*/
+.newsletter_body_content_background{
+    background: url("../img/background-img.png");
+    height: 287px;
+    margin: 0 0 105px 0;
+}
+
+.newsletter_body_content{
+    padding: 0 80px;
+}
+
+.newsletter_title{
+    padding: 74px 0 85px 0;
+}
+
+.newsletter_title_text{
+    font-size: 36px;
+    font-family: "PlayfairDisplay";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.newsletter_input{
+    position: relative;
+    left: 254px;
+}
+
+.newsletter_input_text{
+
+}
+
+.newsletter_input_email{
+    font-size: 16px;
+    background: url("../img/background-img.png");
+    padding: 0 0 0 5px;
+    width: 360px;
+    height: 30px;
+    outline: none;
+    border: none;
+
+}
+
+.line{
+    position: absolute;
+    top: 5px;
+    left: 366px;
+}
+
+@media (max-width: 1010px){
+    .newsletter_title_text{
+        font-size: 48px;
+    }
+
+    .newsletter_input{
+        position: relative;
+        left: 212px;
+    }
+    .newsletter_input_email{
+        font-size: 28px;
+
+    }
+}
+
+/*//////////////////////////SUBMIT//////////////////////////////////*/
+
+.input_submit_{
+    margin: 0 0 120px 0;
+}
+
+.input_submit_load_more{
+    display: flex;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.input_submit_content{
+
+}
+
+.input_load_more{
+    background: white;
+    color: black;
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    border: 1px solid #000000;
+    font-family: "PlayfairDisplay";
+    line-height: 1.2;
+    transition-duration: 1s;
+}
+
+.input_load_more:hover{
+    background: black;
+    color: white;
+}
+
+@media (max-width: 1010px) {
+    .input_load_more{
+        width: 320px;
+        height: 120px;
+        font-size: 32px;
+    }
+}
+
+/*//////////////////////FOOTER//////////////////////*/
+
+.footer_background{
+    background: url("../img/background-img.png");
+    width: 100%;
+    height: 100px;
+
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1;
+    padding: 0 80px;
+}
+.footer_content_text{
+    padding: 40px 0 0 0;
+}
+.footer_p{
+    padding: 0px 20px 0 0;
+    font-size: 18px;
+    font-family: "PlayfairDisplay";
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 1.714;
+
+}
+
+.footer_icon_text{
+    padding: 40px  0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_icon{
+    padding: 7px 0 0 0;
+}
+
+@media (max-width: 1010px) {
+    .footer_icon_text{
+        padding: 25px  0 0;
+
+    }
+    .footer_content_text{
+        padding: 25px 0 0 0;
+    }
+    .footer_p{
+        font-size: 24px;
+    }
+    .footer_icon{
+        padding: 14px 0 0 0;
+    }
+}

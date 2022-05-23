@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Estonia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Estonia&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+
+    background: url("../img/background.png");
+
+}
+
+._container{
+    max-width: 1062px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    max-height: 100%;
+    overflow: hidden;
+}
+
+
+
+.header__container{
+    display: flex;
+    padding: 68px 0 95px 0 ;
+
+}
+
+.header__title{
+
+}
+
+.header__title_text{
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: "Inconsolata";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+.header__menu{
+    margin: 0 0 0 220px;
+}
+
+
+
+.menu_list{
+    display: inline-flex;
+
+}
+
+.menu__item{
+    text-align: right;
+    margin: 0 107px 0 0 ;
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+
+.header__photo{
+
+}
+.header__photo_img{
+    max-width: 1062px;
+    padding: 0 0 95px 0;
+}
+
+
+
+@media (max-width: 992px) {
+    .header__title_text{
+        margin: 0 0 0 40px;
+    }
+
+    .header__menu{
+        margin: 0 0 0 120px;
+    }
+
+    .header__title_text{
+        letter-spacing: 5px;
+        font-size: 50px;
+        font-family: "Inconsolata";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 0.8;
+    }
+
+    .menu__item{
+        text-align: right;
+        margin: 0 45px 0 0 ;
+        font-size: 25px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        text-transform: uppercase;
+        line-height: 1.7;
+    }
+    .header__photo_img{
+        max-width: 1062px;
+        padding: 0 0 95px 0;
+    }
+}
+
+
+.photodiary__content{
+    padding: 0 80px;
+}
+
+
+
+
+.photodiary__title{
+    padding: 0 0 30px 0;
+}
+
+.photodiary__text{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+
+
+.subtitle__title{
+    padding: 0 0 40px 0;
+}
+.subtitle__text{
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+
+}
+
+
+
+.photodiary__main_text{
+    padding: 0 0 50px 0;
+}
+
+.main_text{
+
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+
+}
+
+
+.photo__telki{
+    padding: 0 80px;
+
+}
+
+.photo__telki-telka{
+    margin: 0 0 60px 0;
+}
+
+@media (max-width: 992px) {
+    .photo__telki{
+        padding: 0 80px;
+    }
+
+    .photo__telki-telka img{
+        margin: 0 0 10px 0;
+        width: 815px;
+    }
+}
+
+
+
+
+/*/////////////////////under__block__text/////////////////*/
+.under__block__text{
+    padding: 0px 80px;
+}
+
+.under__title{
+    padding: 0px 20px;
+    margin: 0 0 40px 0;
+}
+
+.under__text__title_text{=
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.under__text{
+    margin: 0 0 120px 0;
+}
+
+.under__text__text{
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+    text-align: left;
+}
+/*//////////////////.share__content/////////////////////////////*/
+
+.share__content{
+    margin: 0 0 80px 0;
+
+
+
+}
+
+.share__content__photo{
+
+}
+
+.share_block_text{
+    display: flex;
+    position: relative;
+    left: 695px;
+
+}
+
+.share_text{
+    margin: 0 25px 0 0;
+}
+
+.a__share{
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.share_block_photo{
+    display: flex;
+}
+
+.share_photo{
+    margin: 0 15px 0 0;
+}
+
+@media (max-width: 992px) {
+
+    .share_block_text{
+        display: flex;
+        position: relative;
+        left: 600px;
+
+    }
+
+    .share_text{
+        margin: 0 25px 0 0;
+    }
+
+    .a__share{
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: rgb(180, 173, 158);
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+
+    .share_block_photo{
+        display: flex;
+    }
+
+    .share_photo{
+        margin: 0 15px 0 0;
+    }
+
+}
+/*//////////////////photo__section__bg//////////////////////////*/
+.photo__section__bg{
+    background: url("../img/background-img.png");
+    height: 435px;
+    margin: 0 0 60px 0;
+   
+}
+
+.photo__section{
+    padding: 0 80px;
+
+}
+
+.you_may_also__block{
+    padding: 65px 0 40px 0;
+}
+
+.you_may_also__text{
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+
+.photo_1-1{
+    width: 273px;
+    height: 182px;
+}
+
+.photo_text{
+    margin: 25px 0 0 0;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+}
+
+.photo__register_block{
+    justify-content: space-between ;
+    display: flex;
+}
+
+.photo__register{
+
+}
+
+
+@media (max-width: 992px) {
+    .photo__section__bg{
+        background: url("../img/background-img.png");
+        height: 1600px;
+        margin: 0 0 30px 0;
+
+    }
+
+    .photo__section{
+        padding: 0 80px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .you_may_also__text{
+        font-size: 24px;
+        font-family: "Myriad Pro";
+        color: rgb(180, 173, 158);
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    .photo_text{
+        margin: 25px 0 60px 0;
+        font-size: 28px;
+        font-family: "Myriad Pro";
+        color: rgb(98, 98, 98);
+        line-height: 1.2;
+    }
+
+
+    .photo_1-1{
+        width: 520px;
+        height: 380px;
+    }
+
+
+    .photo__register_block{
+
+        display: block;
+
+    }
+
+}
+
+
+/*///////////////.comments__container/////////////////////////*/
+
+.comments__container{
+    padding: 0 80px;
+
+}
+
+.comment__block{
+    margin: 0 0 44px 0;
+}
+
+.comment__text{
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.comments__people{
+
+}
+
+.comments__people_text{
+    display: flex;
+    margin: 0 0 60px 0;
+}
+
+.avatar__people{
+    margin: 0 35px 0 0 ;
+}
+
+.comments__people_person__data{
+
+}
+
+.comments__people_person__name{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+}
+
+.comments__people_person__comment{
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(98, 98, 98);
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+}
+
+.comments__people_person__reply{
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.comments__people_person__data__input{
+    border: 1px solid silver;
+    width: 780px;
+    height: 70px;
+    padding: 0 0 0 20px;
+    border-radius: 5px;
+}
+/*///////////FOOTER//////////*/
+.footer{
+    margin: 95px 0 0 0;
+}
+.footer_background{
+    background: url("../img/background-img.png");
+    width: 100%;
+    height: 100px;
+
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1;
+    padding: 0 80px;
+}
+.footer_content_text{
+    padding: 40px 0 0 0;
+}
+.footer_p{
+    padding: 0px 20px 0 0;
+    font-size: 18px;
+    font-family: "PlayfairDisplay";
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 1.714;
+
+}
+
+.footer_icon_text{
+    padding: 40px  0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_icon{
+    padding: 7px 0 0 0;
+}
+
+@media (max-width: 1010px) {
+    .footer_icon_text{
+        padding: 25px  0 0;
+
+    }
+    .footer_content_text{
+        padding: 25px 0 0 0;
+    }
+    .footer_p{
+        font-size: 24px;
+    }
+    .footer_icon{
+        padding: 14px 0 0 0;
+    }
+}
+
+
